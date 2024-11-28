@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>鎌倉あるこ。</title>
+		<link href="css/normalize.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/slick.css">
+		<link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+		<link href="css/style.css" rel="stylesheet">
+
+		<!-- CSS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+
+		<!-- Add the slick-theme.css if you want default styling -->
+		<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+		<!-- Add the slick-theme.css if you want default styling -->
+		<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+		<!-- Font Awesome -->
+		<script src="https://kit.fontawesome.com/c54cb48ecd.js" crossorigin="anonymous"></script>
+	</head>
+
+	<body>
+		<header>
+			<div class="header-container">
+				<div id="nav-button" class="nav-button">
+					<!-- <i class="fa-solid fa-bars" aria-label="menu"></i> -->
+				</div>
+				<nav class="sp-nav">
+					<form>
+						<input type="text" class="search" placeholder="鎌倉あるこを検索">
+					</form>
+
+					<!-- <div class="search">鎌倉あるこを検索</div> -->
+					<details>
+						<summary>ルート<i class="fa-solid fa-chevron-down"></i></summary>
+						<ul class="nav-list">
+							<li>記事1</li>
+							<li>記事2</li>
+							<li>記事3</li>
+						</ul>
+					</details>
+					<details>
+						<summary>歴史<i class="fa-solid fa-chevron-down"></i></summary>
+						<ul class="nav-list">
+							<li>記事1</li>
+							<li>記事2</li>
+							<li>記事3</li>
+						</ul>
+					</details>
+					<details>
+						<summary>ミステリー<i class="fa-solid fa-chevron-down"></i></summary>
+						<ul class="nav-list">
+							<li>記事1</li>
+							<li>記事2</li>
+							<li>記事3</li>
+						</ul>
+					</details>
+				</nav>
+				<nav class="pc-nav">
+					<form>
+						<input type="text" class="search" placeholder="鎌倉あるこを検索">
+					</form>
+
+					<ul class="menu" id="mega_menu">
+
+						<!-- メニュー（親） -->
+						<!-- マウスをhoverすると下にメガメニューのコンテンツが現れる -->
+						<li class="menu-parent">
+							<!-- メニュー（兄） -->
+							<a href="#" class="menu-parent_a">ルート</a>
+							<!-- メガメニュー（弟） -->
+							<!-- 通常は非表示／マウスhoverでメニュー（親）のメガメニュー（子）が現れる -->
+							<div class="menu-child">
+								<div class="menu-child_ul">
+									<a href="#" class="menu-child_li-a">鎌倉大仏散策</a>
+									<a href="#" class="menu-child_li-a">朝比奈切通散策</a>
+									<a href="#" class="menu-child_li-a">北鎌倉から小町通</a>
+								</div>
+								<div class="menu-child_ul">
+									<a href="#" class="menu-child_li-a">頼朝に思いを馳せる</a>
+									<a href="#" class="menu-child_li-a"></a>
+									<a href="#" class="menu-child_li-a"></a>
+								</div>
+								<div class="menu-child_ul">
+									<a href="#" class="menu-child_li-a">紅葉散策</a>
+									<a href="#" class="menu-child_li-a">桜を見ながら段葛散策</a>
+									<a href="#" class="menu-child_li-a">紫陽花と江ノ電絶景スポット</a>
+								</div>
+							</div>
+
+						</li>
+						<li class="menu-parent">
+							<a href="#" class="menu-parent_a">歴史</a>
+							<div class="menu-child">
+								<div class="menu-child_ul">
+									<a href="#" class="menu-child_li-a">鎌倉幕府成立</a>
+									<a href="#" class="menu-child_li-a">義経と頼朝</a>
+									<a href="#" class="menu-child_li-a">北条家の繁栄</a>
+								</div>
+								<div class="menu-child_ul">
+									<a href="#" class="menu-child_li-a">北条執権の終わり</a>
+									<a href="#" class="menu-child_li-a">足利尊氏の反乱</a>
+									<a href="#" class="menu-child_li-a">時行の冒険</a>
+								</div>
+								<div class="menu-child_ul">
+									<a href="#" class="menu-child_li-a">江戸時代の鎌倉</a>
+									<a href="#" class="menu-child_li-a">明治時代の鎌倉</a>
+									<a href="#" class="menu-child_li-a">昭和の鎌倉</a>
+								</div>
+							</div>
+						</li>
+						<li class="menu-parent">
+							<a href="#" class="menu-parent_a">ミステリー</a>
+							<div class="menu-child">
+								<div class="menu-child_ul">
+									<a href="#" class="menu-child_li-a">記事1</a>
+									<a href="#" class="menu-child_li-a">記事2</a>
+									<a href="#" class="menu-child_li-a">記事3</a>
+								</div>
+								<div class="menu-child_ul">
+									<a href="#" class="menu-child_li-a">記事1</a>
+									<a href="#" class="menu-child_li-a">記事2</a>
+									<a href="#" class="menu-child_li-a">記事3</a>
+								</div>
+								<div class="menu-child_ul">
+									<a href="#" class="menu-child_li-a">記事1</a>
+									<a href="#" class="menu-child_li-a">記事2</a>
+									<a href="#" class="menu-child_li-a">記事3</a>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<div class="hero">
+			<div class="hero-container">
+				<div class="xhero-img">
+					<picture>
+						<source srcset="images/sp-slick/sp-cov1.png" alt="" media="(max-width: 768px)" type="image/png">
+						<img src="images/pc-slick/pc-cov1.png" alt="">
+					</picture>
+					<div class="hero-heading">
+						<h1>歴史と自然に触れる鎌倉を歩く旅へ</h1>
+						<div class="logo-img"><img src="images/ko-logo.svg" alt=""></div>
+						<div></div>
+					</div>
+				</div>
+				<div class="xhero-img">
+
+					<picture>
+						<source srcset="images/sp-slick/sp-cov2.png" alt="" media="(max-width: 768px)" type="image/png">
+						<img src="images/pc-slick/pc-cov2.png" alt="">
+					</picture>
+					<div class="hero-heading hero-heading2">
+						<h1>巨大大仏は如何に生まれ鎌倉の象徴となったのか</h1>
+						<div class="logo-img"><img src="images/ko-logo.svg" alt=""></div>
+						<div class="botton"><a href="" class="btn icon">見る</a></div>
+
+					</div>
+				</div>
+				<div class="xhero-img">
+					<picture>
+						<source srcset="images/sp-slick/sp-cov3.png" alt="" media="(max-width: 768px)" type="image/png">
+						<img src="images/pc-slick/pc-cov3.png" alt="">
+					</picture>
+					<div class="hero-heading hero-heading2">
+						<h1>2024年を総括する100枚の写真で振り返る鎌倉</h1>
+						<div class="logo-img"><img src="images/ko-logo.svg" alt=""></div>
+						<div class="button"><a href="" class="btn icon">見る</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<main>
+			<div class="main-contents">
+				<section class="sec1">
+					<div class="article">
+						<h2>鎌倉探検旅行</h2>
+						<p>「鎌倉あるこ。」では、歴史と自然が調和する鎌倉の魅力を存分に楽しむことができます。古都ならではの寺社巡りや、豊かな緑に囲まれた散策路、美しい海岸線など、多彩な見どころがぎゅっと詰まった場所です。円覚寺や報国寺など、歴史と文化が息づく寺院で静かな時間を過ごしたり、古道を辿って大仏切通や朝夷奈切通などの自然豊かな名所を訪れるのもおすすめ。<br>春には桜、夏には海、秋には紅葉、冬には澄んだ空気と、それぞれの季節がもたらす特別な景色を感じられるのも鎌倉の魅力です。<br>「鎌倉あるこ。」は、そんな鎌倉の魅力をより深く味わうためのガイドとして、歴史好きの方から自然愛好家、グルメ好きの方まで、すべての訪問者に役立つ情報をお届けします。鎌倉の散策が、日常を忘れさせるような特別なひとときとなるよう、ぜひ「鎌倉あるこ。」をお供に旅をお楽しみください。</p>
+					</div>
+					<div class="article">
+						<div class="art-img"> <img src="images/top/about.png" alt=""> </div>
+						<p>
+							鎌倉幕府開祖・源頼朝と
+							その一門、栄光と衰退</p>
+						<a href="" class="btn icon">さらに表示する</a>
+
+					</div>
+					<div class="article">
+						<div class="art-img"><img src="images/top/art1.png" alt="">
+							<h3>大仏坂切通</h3>
+						</div>
+						<p>鎌倉の中心部と長谷・極楽寺方面を結ぶ交通路として利用され、戦略的にも重要な役割を果たしていた。</p>
+					</div>
+					<div class="article">
+						<div class="art-img"><img src="images/top/art2.png" alt="">
+							<h3>朝夷奈切通</h3>
+						</div>
+						<p>鎌倉市と横浜市金沢区を結ぶ。1233年（寛喜元年）開かれたとされ、名前の由来は、朝夷奈三郎義秀にちなむ。</p>
+					</div>
+					<div class="article">
+						<div class="art-img"><img src="images/top/art3.png" alt="">
+							<h3>亀ヶ谷坂</h3>
+						</div>
+						<p>鎌倉市の中心部と北側を結ぶ重要な古道。鎌倉時代に開かれ、特に防御のための道として機能していた。</p>
+					</div>
+					<a href="" class="btn icon more">さらに探索する</a>
+
+				</section>
+				<section class="sec2">
+					<div class="map-img"> <img src="images/kamakura-map.svg" alt=""> </div>
+				</section>
+				<section class="sec3">
+					<h2>このサイトをフォローする</h2>
+					<form>
+						<input type="email" value="" name="EMAIL" class="form" placeholder="Email" />
+						<input type="submit" value="送信" class="send">
+
+					</form>
+					<!-- <div class="form"><i class="fa-regular fa-envelope"></i>電子メール</div> -->
+					<!-- <div class="send"><i class="fa-regular fa-paper-plane"></i>送信</div> -->
+				</section>
+
+				<section class="sec4">
+					<h2>＃鎌倉あるこをつけて<br>投稿しよう！</h2>
+					<div class="sns">
+						<a href="https://twitter.com/intent/tweet?button_hashtag=鎌倉あるこ&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-lang="ja" data-show-count="false">Tweet #鎌倉あるこ</a>
+					</div>
+					<div class="sns">
+						<a class="twitter-timeline" href="https://twitter.com/kmkraruko?ref_src=twsrc%5Etfw">Tweets by kmkraruko</a>
+						<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+					</div>
+				</section>
+
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer-container">
+				<div class="sitetitle"><a href="#">鎌倉あるこ。</a></div>
+
+				<div class="footer-nav">
+					<details>
+						<summary>ルート<i class="fa-solid fa-chevron-down"></i></summary>
+						<ul class="nav-list">
+							<li>記事1</li>
+							<li>記事2</li>
+							<li>記事3</li>
+						</ul>
+					</details>
+					<details>
+						<summary>歴史<i class="fa-solid fa-chevron-down"></i></summary>
+						<ul class="nav-list">
+							<li>記事1</li>
+							<li>記事2</li>
+							<li>記事3</li>
+						</ul>
+					</details>
+					<details>
+						<summary>ミステリー<i class="fa-solid fa-chevron-down"></i></summary>
+						<ul class="nav-list">
+							<li>記事1</li>
+							<li>記事2</li>
+							<li>記事3</li>
+						</ul>
+					</details>
+				</div>
+				<p class="copyright"><small>©2024 鎌倉あるこ製作委員会.</small></p>
+			</div>
+		</footer>
+
+		<!-- jquery 読み込み -->
+		<script src="js/jquery-3.6.0.min.js"></script>
+
+		<!--<script src="js/script.js"></script>-->
+		<script src="./js/hamburger.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="./js/carousel.js"></script>
+		<script type="text/javascript" src="./js/slick.min.js"></script>
+		<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
+	</body>
+
+</html>

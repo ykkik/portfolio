@@ -1,0 +1,168 @@
+@charset "utf-8";
+/*-------------------------------------------------*/
+/* サイト全体で使うwebフォント設定 */
+/* ゴシック系 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+/* 明朝系 */
+/* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&display=swap'); */
+
+
+// Scss Document
+$base-color:#ffffff;
+$black:#000000;
+$b-color:#1a274b;
+$g-color:#4b6251;
+$pg-color:#889885;
+$pb-color:#b9c9c9;
+
+$fontfamily-os:'Osaka',
+'Noto Serif JP',
+sans-serif;
+$fontfamily-yu:'Yu Gothic UI',
+'Noto Serif JP',
+sans-serif;
+$sp-conteiner:0 4%;
+$border: 0.5px solid $b-color;
+$pc-conteiner:0 100px;
+$pc2-conteiner:0 33%;
+
+@mixin container {
+  margin: 0 auto;
+}
+
+$sp: "(max-width: 768px)";
+$pc: "(min-width: 768px)";
+$pcmax:"(min-width: 1000px)";
+
+@mixin fontsize($size: 14) {
+  font-size: calc($size / 10) * 1rem;
+}
+
+@mixin sitetitle {
+  @include fontsize(24);
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-family: $fontfamily-yu;
+  font-weight: 600;
+
+  a {
+    color: $pb-color;
+  }
+}
+
+@mixin summarystyle {
+  color: $pb-color;
+  padding-left: 0;
+  border-bottom: 1px dotted $pb-color;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+  margin: 3rem 0;
+
+
+}
+
+@mixin dot-border {
+  border-bottom: 1px dotted #000000;
+}
+
+@mixin navlist {
+  padding: 2rem 0 5rem 0;
+
+  summary {
+    @include summarystyle;
+
+  }
+}
+
+@mixin font-aw($content:'\f00d') {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: $content;
+}
+
+/* 共通 --------------------------*/
+/* ページ全体に関わるCSSの設定 */
+html *,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+/* ページ内リンクを時間をかけてながら表示する */
+html {
+  scroll-behavior: smooth;
+}
+
+/* フォント */
+html {
+  // font-size: 14px;
+  // font-size: 71.4%; // 10px
+  font-size: 62.5%; // 10px
+}
+
+/* フォント設定 */
+body {
+  font-family: $fontfamily-os;
+  /* font-family: 'Noto Serif JP', serif; */
+  font-weight: 400;
+  /* 太さを指定 */
+  line-height: 1.75;
+  letter-spacing: 0.1em;
+
+  @include fontsize(14);
+
+  @media #{$pc} {
+    @include fontsize(16);
+  }
+
+}
+
+/* おもな太字タグのフォントウェイトと余白設定 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+th,
+strong {
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* 段落タグの余白設定 */
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* ベースのリンクカラー */
+a {
+  color: $pb-color;
+  text-decoration: none;
+
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  padding-left: 0;
+}
+
+
+/* レスポンシブイメージと画像下スペース防止 */
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+  /* 画像下のスペースを消す */
+}
+
+/* /ページ全体に関わるCSSの設定 */

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>鎌倉あるこ。切通し</title>
+		<link href="css/normalize.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/slick.css">
+		<link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+		<link href="css/style.css" rel="stylesheet">
+
+		<!-- CSS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+
+		<!-- Add the slick-theme.css if you want default styling -->
+		<!--
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+-->
+
+		<!-- Add the slick-theme.css if you want default styling -->
+		<!--
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+-->
+		<!-- Font Awesome -->
+		<script src="https://kit.fontawesome.com/c54cb48ecd.js" crossorigin="anonymous"></script>
+	</head>
+
+	<body>
+		<header>
+			<div class="header-container">
+				<div id="nav-button" class="nav-button"> </div>
+				<nav class="sp-nav">
+					<form>
+						<input type="text" class="search" placeholder="鎌倉あるこを検索">
+					</form>
+
+					<!-- <div class="search">鎌倉あるこを検索</div> -->
+					<details>
+						<summary>ルート<i class="fa-solid fa-chevron-down"></i></summary>
+						<ul class="nav-list">
+							<li>記事1</li>
+							<li>記事2</li>
+							<li>記事3</li>
+						</ul>
+					</details>
+					<details>
+						<summary>歴史<i class="fa-solid fa-chevron-down"></i></summary>
+						<ul class="nav-list">
+							<li>記事1</li>
+							<li>記事2</li>
+							<li>記事3</li>
+						</ul>
+					</details>
+					<details>
+						<summary>ミステリー<i class="fa-solid fa-chevron-down"></i></summary>
+						<ul class="nav-list">
+							<li>記事1</li>
+							<li>記事2</li>
+							<li>記事3</li>
+						</ul>
+					</details>
+				</nav>
+				<nav class="pc-nav">
+					<form>
+						<input type="text" class="search" placeholder="鎌倉あるこを検索">
+					</form>
+					<ul class="menu" id="mega_menu">
+
+						<!-- メニュー（親） -->
+						<!-- マウスをhoverすると下にメガメニューのコンテンツが現れる -->
+						<li class="menu-parent">
+							<!-- メニュー（兄） -->
+							<a href="#" class="menu-parent_a">ルート</a>
+							<!-- メガメニュー（弟） -->
+							<!-- 通常は非表示／マウスhoverでメニュー（親）のメガメニュー（子）が現れる -->
+							<div class="menu-child">
+								<div class="menu-child_ul"> <a href="#" class="menu-child_li-a">鎌倉大仏散策</a> <a href="#" class="menu-child_li-a">朝比奈切通散策</a> <a href="#" class="menu-child_li-a">北鎌倉から小町通</a> </div>
+								<div class="menu-child_ul"> <a href="#" class="menu-child_li-a">頼朝に思いを馳せる</a> <a href="#" class="menu-child_li-a"></a> <a href="#" class="menu-child_li-a"></a> </div>
+								<div class="menu-child_ul"> <a href="#" class="menu-child_li-a">紅葉散策</a> <a href="#" class="menu-child_li-a">桜を見ながら段葛散策</a> <a href="#" class="menu-child_li-a">紫陽花と江ノ電絶景スポット</a> </div>
+							</div>
+						</li>
+						<li class="menu-parent"> <a href="#" class="menu-parent_a">歴史</a>
+							<div class="menu-child">
+								<div class="menu-child_ul"> <a href="#" class="menu-child_li-a">鎌倉幕府成立</a> <a href="#" class="menu-child_li-a">義経と頼朝</a> <a href="#" class="menu-child_li-a">北条家の繁栄</a> </div>
+								<div class="menu-child_ul"> <a href="#" class="menu-child_li-a">北条執権の終わり</a> <a href="#" class="menu-child_li-a">足利尊氏の反乱</a> <a href="#" class="menu-child_li-a">時行の冒険</a> </div>
+								<div class="menu-child_ul"> <a href="#" class="menu-child_li-a">江戸時代の鎌倉</a> <a href="#" class="menu-child_li-a">明治時代の鎌倉</a> <a href="#" class="menu-child_li-a">昭和の鎌倉</a> </div>
+							</div>
+						</li>
+						<li class="menu-parent"> <a href="#" class="menu-parent_a">ミステリー</a>
+							<div class="menu-child">
+								<div class="menu-child_ul"> <a href="#" class="menu-child_li-a">記事1</a> <a href="#" class="menu-child_li-a">記事2</a> <a href="#" class="menu-child_li-a">記事3</a> </div>
+								<div class="menu-child_ul"> <a href="#" class="menu-child_li-a">記事1</a> <a href="#" class="menu-child_li-a">記事2</a> <a href="#" class="menu-child_li-a">記事3</a> </div>
+								<div class="menu-child_ul"> <a href="#" class="menu-child_li-a">記事1</a> <a href="#" class="menu-child_li-a">記事2</a> <a href="#" class="menu-child_li-a">記事3</a> </div>
+							</div>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<div class="cov-container">
+			<div class="hero-img">
+				<picture>
+					<source srcset="images/contents01/sp-c-cov.png" alt="" media="(max-width: 768px)" type="image/png">
+					<img src="images/contents01/pc-c-cov.png" alt=""> </picture>
+				<div class="hero-heading">
+					<!-- <div class="logo-img"><img src="images/ko-logo.svg" alt=""></div> -->
+					<ul>
+						<li>
+							<h2>所要時間：3時間</h2>
+							<ul>
+								<li><a href="#">北鎌倉駅</a></li>
+								<li><a href="#">亀ヶ谷坂坂切通</a></li>
+								<li><a href="#">化粧坂切通</a></li>
+								<li><a href="#">銭洗弁天</a></li>
+								<li><a href="#">葛原岡神社</a></li>
+								<li><a href="#">葛原岡ハイキングコース</a></li>
+								<li><a href="#">大仏坂切通</a></li>
+								<li><a href="#">高徳院</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<main>
+			<div class="main-contents contents01">
+
+				<section class="sec1">
+					<h2>切通を辿り、鎌倉の歴史と息づく営みを知る</h2>
+					<p>健脚家コース</p>
+					<p>持ち物：歩きやすいスニーカー</p>
+					<div class="article"><img src="images/contents01/c-map.png" alt=""></div>
+					<div class="icon"><img src="images/contents01/145170.png" alt=""></div>
+					<div class="article">
+						<div class="art-img"><img src="images/contents01/eki.png" alt="">
+							<h3>北鎌倉駅</h3>
+						</div>
+						<p>自然に囲まれた趣のある場所に位置し、観光やハイキングの拠点となっている。駅周辺には、円覚寺や明月院（紫陽花寺）といった歴史的なお寺が点在し、四季折々の風景を楽しむことができる。</p>
+					</div>
+					<div class="article">
+						<div class="art-img"><img src="images/contents01/zeni.png" alt="">
+							<h3>銭洗弁財天宇賀福神社</h3>
+						</div>
+						<p>源頼朝が創建したと伝えられ、名前の通り「銭を洗うことで金運が上がる」とされている。
+							境内には湧水があり、この水でお金を洗うと財運や商売繁盛のご利益があると言われている。特に小判や硬貨を洗う人が多いが、現代では紙幣を洗う人もいる。神社は岩場の中にあり、洞窟のような入口を通って参拝する独特の雰囲気がある。周囲の自然と調和した静かな空間が魅力で、訪れると心が洗われるような感覚を味わえる場所である。</p>
+					</div>
+					<div class="article">
+						<div class="art-img"><img src="images/contents01/kuzu.png" alt="">
+							<h3>葛原岡神社</h3>
+						</div>
+						<p>恋愛成就や縁結びのご利益で知られている。鎌倉幕府を支えた政治家・日野俊基（ひのとしもと）を祀っている。俊基は、鎌倉幕府倒幕を図った後醍醐天皇の側近で、鎌倉で処刑された悲劇の人物である。その忠義心が評価され、後に神として祀られるようになった。境内には、「縁結び石」やハート形の絵馬など、恋愛にまつわるスポットが多数あり、特にカップルや若い女性に人気がある。</p>
+					</div>
+					<div class="article">
+						<div class="art-img"><img src="images/contents01/dai-k2.png" alt="">
+							<h3>葛原岡ハイキングコース</h3>
+						</div>
+						<p>鎌倉の北西部に広がる緑豊かな丘陵地を通りながら、著名な史跡や名所を巡る。コース途中には、木々が生い茂る緑豊かな道が続き、四季折々の自然が楽しめます。春には桜、夏には新緑、秋には紅葉、冬には落葉した木々の間から美しい景色が見られる。初心者でも比較的歩きやすいルートだが、一部で急な坂道や滑りやすい場所もあるため、歩きやすい靴と軽装が推奨される。</p>
+					</div>
+					<div class="article">
+						<div class="art-img"><img src="images/contents01/dai-k4.png" alt=""> </div>
+						<p>足元に気を付けながらハイキングコースを歩いていくと看板がある。火の見下方面を歩いていくと櫓群を見ることができる。</p>
+						<div class="icon"><img src="images/contents01/123855.png" alt=""></div>
+						<div class="art-img"><img src="images/contents01/yagura.png" alt=""> </div>
+					</div>
+					<div class="article">
+						<div class="art-img"><img src="images/contents01/dai-k3.png" alt="">
+							<h3>大仏坂切通</h3>
+						</div>
+						<p>鎌倉は四方を山と海に囲まれた地形を持つため、防衛上の利点があるが、同時に都市としての発展には交通の便を整える必要があった。このため、いくつかの切通が作られた。その中で大仏坂切通は、西の大仏（高徳院の鎌倉大仏）へ通じる道として重要視された。鎌倉時代には、周辺地域と鎌倉市内を結ぶ生活路であっただけでなく、戦乱時には軍事的な目的で使用されることもあった。</p>
+					</div>
+					<div class="article">
+						<div class="art-img"><img src="images/contents01/daibutsu.png" alt="">
+							<h3>高徳院</h3>
+						</div>
+						<p>鎌倉大仏は高さ約11.31メートル（台座を含めると13.35メートル）、重量約121トンという壮大なスケールを誇り、その穏やかな表情は訪れる人々に深い安らぎを与えている。
+							鎌倉時代中期の1252年（建長4年）頃に建立されたとされるこの大仏は、当初は木造だったが後に青銅製に改修された。かつては大仏殿に安置されていたが、幾度かの自然災害により大仏殿は倒壊し、その後再建されることなく現在は屋外に立っている。現在では、大仏の内部に入ることができ、当時の鋳造技術や補強工事の痕跡を間近で見ることができる。
+							この大仏の建立には、当時の鎌倉幕府や民間の寄進が深く関与しており、仏教の浄土思想を背景に、人々の救済や平和への願いが込められたとされる。大仏は長い年月を通じて風雨に耐え、鎌倉の歴史と文化を見守り続けてきた。</p>
+					</div>
+					<div class="icon"><img src="images/contents01/137571.png" alt=""></div>
+				</section>
+
+				<section class="sec2">
+					<h2>鎌倉散策の合間のお楽しみ</h2>
+					<p>お腹が空いたら</p>
+					<div class="article">
+						<div class="art-img-parent">
+							<div class="art-img"><img src="images/contents01/kyara.png" alt=""></div>
+							<div class="art-img-child"><img src="images/contents01/kyara2.png" alt=""> </div>
+						</div>
+						<div class="caption">
+							<h3>キャラウェイ</h3>
+							<p>地元住民や観光客から長年愛されているお店で、鎌倉駅から徒歩数分という便利な立地にある。クラシカルで温かみのある洋風の雰囲気が特徴で、鎌倉散策の途中に立ち寄る人も多い。お店の名物は、大きめの白いお皿にたっぷりと盛られたカレーライス。濃厚でスパイシーなルーが特徴で、ボリュームがしっかりあるので満足感がある。付け合わせで味編も楽しめる。常に行列があるため、並んでなかったらラッキー。店内は昭和のレトロな雰囲気を感じられ、鎌倉の落ち着いた空気とよく合っている。</p>
+						</div>
+					</div>
+					<p>思い出を持ち帰る</p>
+					<div class="article">
+						<div class="art-img-parent">
+							<div class="art-img"><img src="images/contents01/welkom.png" alt=""></div>
+							<div class="art-img-child"><img src="images/contents01/item.png" alt=""> </div>
+						</div>
+						<div class="caption">
+							<h3>WELKAM</h3>
+							<p>店名の由来は“WELCOME TO KAMAKURA”から。
+								鎌倉育ちの店主が地元の作り手と共に、旅のちょっとした思い出になるようなお土産物を作っています。
+								小さいながらもアイデアのたくさん詰まった、観光の方も地元の方もウェルカムなお店作りを目指しています。</p>
+						</div>
+					</div>
+				</section>
+				<!-- <section class="sec3">
+				</section>
+
+				<section class="sec4">
+				</section> -->
+
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer-container">
+				<div class="sitetitle"><a href="#">鎌倉あるこ。</a></div>
+				<div class="footer-nav">
+					<details>
+						<summary>ルート<i class="fa-solid fa-chevron-down"></i></summary>
+						<ul class="nav-list">
+							<li>記事1</li>
+							<li>記事2</li>
+							<li>記事3</li>
+						</ul>
+					</details>
+					<details>
+						<summary>歴史<i class="fa-solid fa-chevron-down"></i></summary>
+						<ul class="nav-list">
+							<li>記事1</li>
+							<li>記事2</li>
+							<li>記事3</li>
+						</ul>
+					</details>
+					<details>
+						<summary>ミステリー<i class="fa-solid fa-chevron-down"></i></summary>
+						<ul class="nav-list">
+							<li>記事1</li>
+							<li>記事2</li>
+							<li>記事3</li>
+						</ul>
+					</details>
+				</div>
+				<p class="copyright"><small>©2024 鎌倉あるこ製作委員会.</small></p>
+			</div>
+		</footer>
+
+		<!-- jquery 読み込み -->
+		<script src="js/jquery-3.6.0.min.js"></script>
+
+		<!--<script src="js/script.js"></script>-->
+		<script src="./js/hamburger.js"></script>
+		<!--
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+-->
+		<!--<script src="./js/carousel.js"></script> 
+<script type="text/javascript" src="./js/slick.min.js"></script> 
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>-->
+	</body>
+
+</html>
