@@ -30,8 +30,18 @@ $pc2-conteiner:0 33%;
   margin: 0 auto;
 }
 
+@mixin sp-container {
+  margin: 0 auto;
+  max-width: 767px;
+}
+
+@mixin pc-container {
+  // margin: 0 auto;
+  max-width: 1400px;
+}
+
 $sp: "(max-width: 768px)";
-$pc: "(min-width: 768px)";
+$pc: "(min-width: 769px)";
 $pcmax:"(min-width: 1000px)";
 
 @mixin fontsize($size: 14) {

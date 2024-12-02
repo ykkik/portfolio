@@ -1,25 +1,25 @@
 /*
 Error: Undefined operation: "calc($size / 10) times 1rem".
-        on line 35 of /Users/yuki/Desktop/htdocs/pf/site2/sass/_base.scss, in `fontsize'
-        from line 112 of /Users/yuki/Desktop/htdocs/pf/site2/sass/_base.scss
-        from line 1 of /Users/yuki/Desktop/htdocs/pf/site2/sass/style.scss
+        on line 48 of /Users/yuki/Desktop/portfolio/htdocs/pf/site2/sass/_base.scss, in `fontsize'
+        from line 125 of /Users/yuki/Desktop/portfolio/htdocs/pf/site2/sass/_base.scss
+        from line 1 of /Users/yuki/Desktop/portfolio/htdocs/pf/site2/sass/style.scss
 
-30: 
-31: // 			}
-32: 
-33: // 		}
-34: 
-35: // 		.copyright {
-36: // 			text-align: center;
-37: // 		}
-38: // 	}
-39: // }
-40: 
+43: 	position: fixed;
+44: 	inset: 0;
+45: 	z-index: 9999;
+46: 	display: grid;
+47: 	place-items: center;
+48: 
+49: 	.spinner {
+50: 		width: 200px;
+51: 		height: 200px;
+52: 	}
+53: 
 
 Backtrace:
-/Users/yuki/Desktop/htdocs/pf/site2/sass/_base.scss:35:in `fontsize'
-/Users/yuki/Desktop/htdocs/pf/site2/sass/_base.scss:112
-/Users/yuki/Desktop/htdocs/pf/site2/sass/style.scss:1
+/Users/yuki/Desktop/portfolio/htdocs/pf/site2/sass/_base.scss:48:in `fontsize'
+/Users/yuki/Desktop/portfolio/htdocs/pf/site2/sass/_base.scss:125
+/Users/yuki/Desktop/portfolio/htdocs/pf/site2/sass/style.scss:1
 /Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/script/tree/operation.rb:88:in `rescue in _perform'
 /Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/script/tree/operation.rb:84:in `_perform'
 /Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/script/tree/node.rb:50:in `perform'
@@ -96,4 +96,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined operation: \"calc($size / 10) times 1rem\".\A         on line 35 of /Users/yuki/Desktop/htdocs/pf/site2/sass/_base.scss, in `fontsize'\A         from line 112 of /Users/yuki/Desktop/htdocs/pf/site2/sass/_base.scss\A         from line 1 of /Users/yuki/Desktop/htdocs/pf/site2/sass/style.scss\A \A 30: \A 31: // 			}\A 32: \A 33: // 		}\A 34: \A 35: // 		.copyright {\A 36: // 			text-align: center;\A 37: // 		}\A 38: // 	}\A 39: // }\A 40: "; }
+  content: "Error: Undefined operation: \"calc($size / 10) times 1rem\".\A         on line 48 of /Users/yuki/Desktop/portfolio/htdocs/pf/site2/sass/_base.scss, in `fontsize'\A         from line 125 of /Users/yuki/Desktop/portfolio/htdocs/pf/site2/sass/_base.scss\A         from line 1 of /Users/yuki/Desktop/portfolio/htdocs/pf/site2/sass/style.scss\A \A 43: 	position: fixed;\A 44: 	inset: 0;\A 45: 	z-index: 9999;\A 46: 	display: grid;\A 47: 	place-items: center;\A 48: \A 49: 	.spinner {\A 50: 		width: 200px;\A 51: 		height: 200px;\A 52: 	}\A 53: "; }

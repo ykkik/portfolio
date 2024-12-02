@@ -70,6 +70,19 @@ img {
 /* /共通 --------------------------*/
 .hero-container {
 	position: relative;
+
+}
+
+.menu-hero {
+	background-image: url(../images/menu/menu-cover.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	height: 49vw;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
 }
 
 .hero-container .btn {
@@ -139,6 +152,7 @@ img {
 
 .contents-container:last-child {
 	padding-bottom: 0;
+	width: 100%;
 }
 
 /* ここから下に、個別のスタイルシートを追加していく。 */
@@ -170,10 +184,6 @@ h1 {
 	box-shadow: -20px 20px 0px 0px rgb(158 195 188 / 70%);
 }
 
-.about-image {
-	/*	padding: 1.5rem 0;*/
-}
-
 .about-bg-image {
 	/*position: absolute; */
 	/* top: 40px; */
@@ -184,7 +194,7 @@ h1 {
 }
 
 .contents-container p {
-	padding-top: 5rem;
+	padding-top: 3rem;
 }
 
 h2, h3, .time {
@@ -222,10 +232,6 @@ h2 {
 	padding-bottom: 0.5rem;
 }
 
-.contents2-container {
-	/*	background: #aa998a;*/
-}
-
 .contents2-container2 .menu-image {
 	width: 80%;
 }
@@ -239,6 +245,7 @@ h2 {
 	margin: 1.4rem auto; */
 	padding: 0 5rem;
 	font-family: 'Noto Serif JP', serif;
+	margin: 0 auto;
 }
 
 .btn a {
@@ -317,6 +324,8 @@ h2 {
 	align-items: center;
 	justify-content: center;
 	padding: 6.67% 1.07rem;
+	max-width: 940px;
+	margin: 0 auto;
 }
 
 .footer-container .wrap {
@@ -404,6 +413,7 @@ address {
 
 .copyright, .footer-address {
 	text-align: center;
+	font-style: normal;
 }
 
 .copyright {
@@ -513,16 +523,61 @@ padding: 1rem;
 	font-weight: 200;
 }
 
+.facebook_wrap {
+	/* 以下2行は不要かも */
+	max-width: 500px;
+	width: 500px;
+}
+
+.facebook_wrap {
+	/* width: 100%;*/
+	margin: 0 auto !important;
+	text-align: center !important;
+
+}
+
+.fb-page,
+.fb-page span,
+.facebook_wrap iframe {
+	width: 100% !important;
+	height: 500px !important;
+}
+
+.fb-page {
+	text-align: center !important;
+	margin: 0 auto !important;
+}
+
+._2p3a {
+	margin: 0 auto !important;
+}
+
+/* 896px以下は横幅100%、中央寄せ*/
+@media screen and (max-width: 896px) {
+	.facebook_wrap {
+		width: 100%;
+		text-align: center !important;
+		margin: 0 auto !important;
+	}
+}
+
+
+
+._2p3a {
+	/* margin: 0 auto; */
+}
+
 /*menu.htmlここから--------------------------------------------------------*/
 .menu-caption {
-	position: absolute;
-	top: 75%;
+	/* position: absolute; */
+	/* top: 75%; */
 	/* right: 0; */
-	left: 50%;
-	transform: translate(-50%, -50%);
+	/* left: 50%; */
+	/* transform: translate(-50%, -50%); */
 	font-size: 3.5rem;
 	color: #aa998a;
 	font-weight: 500;
+	margin-bottom: 0.5rem;
 }
 
 .menu-contents * {
@@ -598,10 +653,6 @@ h3 {
 	margin-left: 0;
 }
 
-.menu-contents .caption {
-	/*	padding: 0 1rem;*/
-}
-
 .menu-t {
 	list-style: none;
 	padding: 0;
@@ -630,16 +681,6 @@ h3 {
 	width: 100%;
 }
 
-.contents2-container3 .caption {
-	/*	padding: 0 0 3rem 0;*/
-}
-
-/* 
-.contents1-container .caption p {
-	/* width: 50%; */
-/* padding-top: 0; */
-/* padding: 1.75rem; */
-/* } */
 /*メディアクエリ*/
 @media (min-width: 769px) {
 	.contents2 {
@@ -650,21 +691,6 @@ h3 {
 		padding-top: 3rem;
 	}
 
-	.contents2-container .wrap, .contents2-container2 .wrap, .contents2-container3 .wrap {
-		/*	height: 57vw;*/
-
-	}
-
-	/*
-	..hero {
-		height: 50rem;
-	}
-*/
-	/*
-	.sp-hero-image.slick-initialized.slick-slider {
-		display: none;
-	}
-*/
 	.hero-container .btn {
 		top: 10rem;
 		right: 5rem;
@@ -676,13 +702,6 @@ h3 {
 		left: auto;
 	}
 
-	/*.container {
-		max-width: 1200px;
-		padding: 80px 20px 0 20px;
-		padding-top: 9rem;
-		margin: 0 auto;
-	}
-*/
 	.sitetitle {
 		font-size: 3.75rem;
 	}
@@ -729,7 +748,7 @@ h3 {
 	}
 
 	.about {
-		width: 45%;
+		width: 47%;
 	}
 
 	.about .about-image {
@@ -760,19 +779,19 @@ h3 {
 
 	.contents1-container p {
 		width: 50%;
-		padding-top: 0;
-		/* padding: 1.75rem; */
+		/* padding-top: 0; */
+		padding: 1.75rem;
 	}
 
 	.contents2-container .wrap {
 		display: flex;
-		/*		padding: 6.25rem 12.5rem;*/
-		/*		padding:0.25rem 8.5rem;*/
+		/* padding: 6.25rem 12.5rem; */
+		/* padding: 0.25rem 8.5rem; */
 		flex-direction: row;
 		flex-wrap: wrap;
-		justify-content: center;
-		align-content: space-around;
-		/*		margin: 0 6rem;*/
+		justify-content: space-between;
+		max-width: 940px;
+		margin: 0 auto;
 	}
 
 	.caption {
@@ -795,7 +814,9 @@ h3 {
 		/**/
 		justify-content: space-around;
 		align-items: center;
-		/*		margin: 0 6rem;*/
+		justify-content: space-between;
+		max-width: 940px;
+		margin: 0 auto;
 	}
 
 	.contents2-container2 .wrap .menu-image {
@@ -811,13 +832,15 @@ h3 {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		padding: 0 6.25rem;
-		/*				padding:0.25rem 8.5rem;*/
-		/*		margin: 0 6rem;*/
+		padding-left: 6.25rem;
+		padding-right: 6.25rem;
+		max-width: 900px;
+		margin: 0 auto;
 	}
 
 	.contents2-container3 p {
 		padding: 0 3rem;
+		padding-top: 3rem
 	}
 
 	.contents3 {
@@ -866,11 +889,14 @@ h3 {
 	}
 
 	/* media-menu -------------------------------------------------------*/
-	.menu-contents .contents2-container .wrap {}
+	.menu-hero {
+		height: 40vw;
+
+	}
 
 	.menu-caption {
 		font-size: 5.5rem;
-		bottom: 5rem;
+		margin-bottom: 1rem;
 	}
 
 	.menu-contents .contents2-container3 .wrap {
@@ -880,10 +906,7 @@ h3 {
 		padding: 0;
 		flex-wrap: wrap;
 		/* width: 100%; */
-	}
-
-	.menu-h1 {
-		/*		height: 47vw;*/
+		justify-content: space-between;
 	}
 
 	.dinner-h3 {
@@ -923,7 +946,7 @@ h3 {
 
 	.contents2-container4 .caption {
 		width: 100%;
-		padding: 0 12rem
+		/* padding: 0 12rem */
 	}
 
 	.menu-contents {
@@ -931,7 +954,7 @@ h3 {
 	}
 
 	.contents2-container4.contents-container {
-		padding: 6.25rem 0;
+		padding: 6.25rem 0 0 0;
 	}
 }
 

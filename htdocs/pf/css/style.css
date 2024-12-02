@@ -124,6 +124,8 @@ img {
 /* 追加 ここから -------------------*/
 .main-img {
 	width: 50%;
+	grid-row: 2 / 3;
+	margin: 0 auto;
 }
 
 
@@ -161,7 +163,6 @@ img {
 		width: 100vw;
 		z-index: 2;
 	}
-
 }
 
 /* 追加 ここまで -------------------*/
@@ -247,7 +248,7 @@ img {
 /* コンテンツ部分 --------------------------*/
 
 .container {
-	padding: 60px 4%;
+	padding: 20px 4%;
 }
 
 @media (min-width: 768px) {
@@ -274,7 +275,35 @@ img {
 	justify-items: center;
 }
 
+/* .wrapper::after {
+	background-image: url(../images/neko.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+
+} */
+
+.wrapper:nth-child(n+3) {
+	background-image: url("../images/cat.svg");
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	background-size: 100px;
+}
+
+/* .wrapper .btn:last-child::after {
+	content: url("../images/cat.svg");
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	background-size: 20%;
+} */
+
 @media (min-width: 768px) {
+	.main-img {
+		grid-column: 2 / 3;
+		grid-row: 1 / 2;
+		width: auto;
+		margin-left: auto;
+	}
+
 	.wrapper {
 		grid-template-columns: 1fr 1fr;
 		column-gap: 20px;
@@ -359,7 +388,7 @@ img {
 } */
 .arrow_box {
 	position: relative;
-	background: #88b7d5;
+	background: #ccc;
 	padding: 3rem;
 	border-radius: 10rem;
 	filter: drop-shadow(5px 5px 3px rgba(0, 0, 0, .6));
@@ -375,20 +404,33 @@ img {
 	top: -20px;
 }
 
-.arrow_box {
-	::before {
-		background-color: #ccc;
-		content: "";
-		height: 30px;
-		position: absolute;
-		width: 30px;
-	}
+.arrow_box::before {
+	background-color: #ccc;
+	content: "";
+	height: 30px;
+	position: absolute;
+	width: 30px;
 
-	/* 吹き出し上 */
+}
+
+/* 吹き出し下 */
+.arrow_box::before {
+	top: 99%;
+	width: 30px;
+	height: 10%;
+	clip-path: polygon(0 0, 100% 0, 50% 100%);
+	left: 35%;
+}
+
+@media (min-width: 768px) {
+
 	.arrow_box::before {
-		clip-path: polygon(0 100%, 50% 0, 100% 100%);
-		left: 43%;
-		top: -20px;
-	}
+		left: 91%;
+		width: 16%;
+		height: 30px;
+		top: 50%;
 
-	/* ここまで */
+	}
+}
+
+/* ここまで */

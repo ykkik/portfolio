@@ -13,6 +13,15 @@
 		<link rel="stylesheet" type="text/css" href="css/remodal-default-theme.css">
 		<link href="css/style.css" rel="stylesheet">
 
+		<!-- jquery 読み込み -->
+		<script src="js/jquery-3.6.0.min.js" defer></script>
+		<script src="js/script.js" defer></script>
+		<script src="./js/hamburger.js" defer></script>
+		<script src="./js/carousel.js" defer></script>
+		<script type="text/javascript" src="./js/slick.min.js" defer></script>
+		<script type="text/javascript" src="js/jquery.min.js" defer></script>
+		<script type="text/javascript" src="js/remodal.min.js" defer></script>
+
 		<!-- CSS -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
 
@@ -27,6 +36,9 @@
 	</head>
 
 	<body>
+		<div id="loading">
+			<img class="spinner" src="images/ko-logo.svg" alt="" />
+		</div>
 		<header>
 			<div class="header-container">
 				<div id="nav-button" class="nav-button">
@@ -127,7 +139,7 @@
 						<source srcset="images/sp-slick/sp-cov3.png" alt="" media="(max-width: 768px)" type="image/png">
 						<img src="images/pc-slick/pc-cov3.png" alt=""> </picture>
 					<div class="hero-heading hero-heading2">
-						<h1>2024年を総括する100枚の写真で振り返る鎌倉</h1>
+						<h1>100枚の写真で振り返る鎌倉の2024</h1>
 						<div class="logo-img"><img src="images/ko-logo.svg" alt=""></div>
 						<div class="button"><a href="" class="btn icon">見る</a></div>
 					</div>
@@ -139,9 +151,7 @@
 				<section class="sec1">
 					<div class="article">
 						<h2>鎌倉探検旅行</h2>
-						<p>「鎌倉あるこ。」では、歴史と自然が調和する鎌倉の魅力を存分に楽しむことができます。古都ならではの寺社巡りや、豊かな緑に囲まれた散策路、美しい海岸線など、多彩な見どころがぎゅっと詰まった場所です。円覚寺や報国寺など、歴史と文化が息づく寺院で静かな時間を過ごしたり、古道を辿って大仏切通や朝夷奈切通などの自然豊かな名所を訪れるのもおすすめ。<br>
-							春には桜、夏には海、秋には紅葉、冬には澄んだ空気と、それぞれの季節がもたらす特別な景色を感じられるのも鎌倉の魅力です。<br>
-							「鎌倉あるこ。」は、そんな鎌倉の魅力をより深く味わうためのガイドとして、歴史好きの方から自然愛好家、グルメ好きの方まで、すべての訪問者に役立つ情報をお届けします。鎌倉の散策が、日常を忘れさせるような特別なひとときとなるよう、ぜひ「鎌倉あるこ。」をお供に旅をお楽しみください。</p>
+						<p>「鎌倉あるこ。」では、歴史と自然が調和する鎌倉の魅力を存分に楽しむことができます。古都ならではの寺社巡りや、豊かな緑に囲まれた散策路、美しい海岸線など、多彩な見どころがぎゅっと詰まった場所です。円覚寺や報国寺など、歴史と文化が息づく寺院で静かな時間を過ごしたり、古道を辿って大仏切通や朝夷奈切通などの自然豊かな名所を訪れるのもおすすめ。<br>そんな鎌倉の魅力をより深く味わうためのガイドとして、ぜひ「鎌倉あるこ。」をお供に旅をお楽しみください。</p>
 					</div>
 					<div class="article">
 						<div class="art-img"> <img src="images/top/about.png" alt=""> </div>
@@ -1257,7 +1267,7 @@
 							<div class="art-img"><img src="images/contents01/daibutsu.png" alt="">
 								<h2>高徳院の大仏</h2>
 							</div>
-							<p>高徳院と鎌倉大仏の造立には、当時の鎌倉幕府や民間からの寄進が深く関与していました。大仏は仏教の浄土思想に基づき、平和や人々の救済を願って建立されました。また、幾多の災害を乗り越えてきた大仏は、鎌倉の歴史を見守り続けてきた存在です。</p>
+							<p>高徳院と鎌倉大仏の造立には、当時の鎌倉幕府や民間からの寄進が深く関与していた。大仏は仏教の浄土思想に基づき、平和や人々の救済を願って建立された。また、幾多の災害を乗り越えてきた大仏は、鎌倉の歴史を見守り続けてきた存在である。</p>
 						</div>
 						<button data-remodal-action="cancel" class="remodal-cancel">閉じる</button>
 					</div>
@@ -1266,7 +1276,7 @@
 							<div class="art-img inari-img"><img src="images/inari.png" alt="">
 								<h2>佐助稲荷神社</h2>
 							</div>
-							<p>佐助稲荷神社は、鎌倉幕府を開いた源頼朝に深く関わる伝説を持つ神社です。 頼朝が伊豆に流刑されていた頃、夢に稲荷神が現れ、挙兵して幕府を築くよう導いたと言われている。この「助けられた」という逸話から「佐助」という地名や神社の名前が付けられたとされ、出世の象徴として信仰を集めている。</p>
+							<p>佐助稲荷神社は、鎌倉幕府を開いた源頼朝に深く関わる伝説を持つ神社。 頼朝が伊豆に流刑されていた頃、夢に稲荷神が現れ、挙兵して幕府を築くよう導いたと言われている。この「助けられた」という逸話から「佐助」という地名や神社の名前が付けられたとされ、出世の象徴として信仰を集めている。</p>
 						</div>
 						<button data-remodal-action="cancel" class="remodal-cancel">閉じる</button>
 					</div>
@@ -1333,16 +1343,7 @@
 			</div>
 		</footer>
 
-		<!-- jquery 読み込み -->
-		<script src="js/jquery-3.6.0.min.js"></script>
-
-		<!--<script src="js/script.js"></script>-->
-		<script src="./js/hamburger.js"></script>
-		<script src="./js/carousel.js"></script>
-		<script type="text/javascript" src="./js/slick.min.js"></script>
 		<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-		<script type="text/javascript" src="js/jquery.min.js"></script>
-		<script type="text/javascript" src="js/remodal.min.js"></script>
 	</body>
 
 </html>

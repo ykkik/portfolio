@@ -33,7 +33,7 @@ body {
   letter-spacing: 0.1em;
   font-size: 1.4rem;
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   body {
     font-size: 1.6rem;
   }
@@ -89,6 +89,27 @@ img {
   margin: 0 auto;
 }
 
+#loading {
+  transition: all 1s;
+  background-color: #ddd;
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: grid;
+  place-items: center;
+  /* ローディング完了したらローディング画面を隠す */
+  /* コンテンツ部分 */
+}
+#loading .spinner {
+  width: 200px;
+  height: 200px;
+}
+
+.loaded {
+  opacity: 0;
+  visibility: hidden;
+}
+
 .footer {
   background: #1a274b;
   color: #b9c9c9;
@@ -121,7 +142,7 @@ img {
   padding-bottom: 1rem;
   margin: 3rem 0;
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .footer .footer-container .footer-nav {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -131,7 +152,7 @@ img {
 .footer .footer-container .copyright {
   text-align: center;
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .footer {
     padding: 0 100px;
   }
@@ -141,32 +162,32 @@ img {
   padding: 0 4%;
   padding-bottom: 6rem;
   padding-top: 6rem;
+  margin: 0 auto;
+  max-width: 767px;
 }
 .sec3 h2, .sec4 h2 {
   background-color: #b9c9c9;
   padding: 2rem;
-  width: 100%;
-  height: 150px;
+  width: auto;
+  margin: 0 auto;
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .sec3, .sec4 {
-    padding: 0 33%;
     margin: 15rem 0;
+    padding: 0 100px;
+    margin: 15rem auto;
+    max-width: 1200px;
+    padding: 0 350px;
   }
 }
 
-.sec4 {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
 .sec4 .sns {
-  width: 100%;
+  width: auto;
   text-align: center;
-  margin-top: 2rem;
+  margin: 0 auto;
+  margin-top: 4rem;
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .sec4 {
     background-size: 36px;
     padding-bottom: 10rem;
@@ -199,10 +220,15 @@ img {
 }
 
 .sec1 {
+  margin: 0 auto;
+  max-width: 767px;
   padding: 0 4%;
   padding-bottom: 1rem;
+  background-repeat: repeat-x;
+  background-position: bottom;
+  padding-bottom: 20vw;
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .sec1 {
     grid-template-columns: 1fr 1fr 1fr;
     display: grid;
@@ -210,6 +236,9 @@ img {
     justify-content: center;
     grid-template-rows: 1fr auto;
     gap: 3rem;
+    max-width: 1400px;
+    padding-left: 100px;
+    padding-right: 100px;
   }
 }
 .sec1 .article:first-child {
@@ -225,7 +254,7 @@ img {
 .sec1 .article:first-child .art-img {
   width: 85%;
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .sec1 .article:first-child {
     grid-column-start: 1;
     grid-column-end: 3;
@@ -235,15 +264,10 @@ img {
     align-content: flex-start;
     flex-wrap: nowrap;
     align-items: center;
-    padding: 3rem;
+    padding: 4rem;
   }
   .sec1 .article:first-child p {
     font-size: 2.2rem;
-  }
-}
-@media (min-width: 768px) {
-  .sec1 {
-    padding: 0 100px;
   }
 }
 .sec1 .article:nth-child(2) {
@@ -279,17 +303,10 @@ img {
   height: 5px;
 }
 
-.sec1 {
-  background-image: url("../images/obi.svg");
-  background-repeat: no-repeat;
-  background-position: bottom;
-  padding-bottom: 20vw;
-}
-
 .article:nth-child(n+3) {
   width: 100%;
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .article:nth-child(n+3) {
     margin-bottom: 80px;
   }
@@ -298,7 +315,7 @@ img {
 .article {
   margin: 3rem 0;
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .article {
     margin: 0;
   }
@@ -306,9 +323,9 @@ img {
 
 h3,
 h2 {
-  font-size: 2.4rem;
+  font-size: 2.1rem;
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   h3,
   h2 {
     font-size: 3.2rem;
@@ -327,7 +344,7 @@ h2 {
   content: "\f078";
   font-size: 5rem;
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .more {
     grid-column-start: -3;
     font-size: 3rem;
@@ -345,12 +362,16 @@ h2 {
   height: 51%;
   display: flex;
   flex-direction: row-reverse;
-  align-items: flex-end;
   justify-content: space-between;
   flex-wrap: wrap;
+  align-content: stretch;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  margin: 0 auto;
+  max-width: 767px;
 }
 .hero-container .hero-heading h1 {
-  font-size: 2.8rem;
+  font-size: 3rem;
   color: #ffffff;
   text-align: end;
   letter-spacing: 1rem;
@@ -359,13 +380,18 @@ h2 {
   text-align: right;
   margin: 0;
   font-weight: 600;
+  width: 100%;
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .hero-container .hero-heading h1 {
     font-size: 3.6rem;
     text-align: left;
     width: 100%;
     grid-column: 1/4;
+    grid-row: 1/3;
+    text-align: start;
+    margin-bottom: auto;
+    margin-top: 2rem;
   }
 }
 @media (min-width: 1000px) {
@@ -377,23 +403,24 @@ h2 {
   width: 30%;
   background: rgba(255, 255, 255, 0.5);
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .hero-container .hero-heading .logo-img {
-    width: auto;
-    grid-column: -2;
-    grid-row: -2;
+    grid-column: 3/4;
+    grid-row: -3/-1;
+    margin-left: auto;
+    max-width: 1400px;
   }
 }
 .hero-container .hero-heading .botton {
   width: 29%;
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .hero-container .hero-heading .botton {
     grid-column: 1/2;
-    grid-row: 2;
+    grid-row: 3/4;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .hero-container .hero-heading {
     padding: 0 100px;
     /* height: 0; */
@@ -404,16 +431,16 @@ h2 {
     /* flex-direction: column; */
     width: 100%;
     flex-wrap: wrap;
-    grid-template-columns: 1fr 1fr 100px;
-    grid-template-rows: 1fr 150px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    height: 34vw;
     justify-content: space-between;
-    align-items: center;
-  }
-}
-@media (min-width: 768px) {
-  .hero-container .hero-heading {
-    grid-template-columns: 1fr 1fr 196px;
-    grid-template-rows: 1fr 220px;
+    align-items: start;
+    max-width: 1400px;
+    padding-bottom: 3rem;
+    left: 0;
+    right: 0;
+    margin: auto;
   }
 }
 .hero-container .dots-wrap {
@@ -424,10 +451,16 @@ h2 {
   position: absolute;
   bottom: 27%;
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .hero-container .dots-wrap {
-    padding: 0 100px;
-    bottom: 19%;
+    margin: 0 auto;
+    bottom: 25%;
+    max-width: 1400px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    left: 3%;
   }
 }
 .hero-container .dots-wrap li {
@@ -471,6 +504,8 @@ h2 {
 }
 
 .header-container {
+  margin: 0 auto;
+  max-width: 767px;
   position: absolute;
   top: 0;
   display: flex;
@@ -478,7 +513,7 @@ h2 {
   justify-content: flex-end;
   z-index: 1000;
   width: 100%;
-  margin: 2rem 0;
+  margin: 2rem auto;
   box-sizing: border-box;
   padding: 0 4%;
 }
@@ -502,7 +537,7 @@ h2 {
   font-weight: 900;
   content: "\f00d";
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .header-container .nav-button {
     display: none;
   }
@@ -553,15 +588,20 @@ h2 {
   content: "\f002";
   font-size: 2rem;
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .header-container .sp-nav nav.sp-nav.show,
   .header-container .pc-nav nav.sp-nav.show {
     display: none;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .header-container {
     padding: 0 100px;
+    width: auto;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    max-width: 1200px;
   }
   .header-container .pc-nav {
     visibility: visible;
@@ -571,11 +611,12 @@ h2 {
     margin: 0;
     gap: 2rem;
     border-top: 0;
-    top: 1rem;
+    top: 2rem;
     align-items: end;
     justify-items: end;
     right: 0;
-    width: 87%;
+    width: 100%;
+    left: 0;
     margin: 0 auto;
   }
   .header-container .pc-nav summary {
@@ -587,7 +628,7 @@ h2 {
     display: none;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .header-container .sp-nav {
     display: none;
   }
@@ -617,10 +658,16 @@ h2 {
 .main-contents .article p {
   padding: 2rem;
 }
+.main-contents .sec2::before {
+  content: url(../images/obi.svg);
+  display: block;
+  margin-bottom: -1rem;
+  width: 100%;
+}
 .main-contents .sec2 a:hover {
   transform: translateY(-5px);
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .main-contents {
     top: -13rem;
     margin-bottom: -13rem;
@@ -747,7 +794,7 @@ h2 {
 .cov-container .hero-heading ul a {
   color: #ffffff;
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .cov-container .hero-heading {
     margin-right: 100px;
     bottom: 2vw;
@@ -768,6 +815,10 @@ h2 {
 }
 .contents01 .sec1 {
   background-color: #b9c9c9;
+  background-image: url("../images/obi.svg");
+  background-repeat: repeat-x;
+  background-position: bottom;
+  padding-bottom: 20vw;
 }
 .contents01 .sec1 .article p {
   text-align: justify;
@@ -787,12 +838,13 @@ h2 {
   position: relative;
   display: flex;
   width: 100%;
+  margin-bottom: 13rem;
 }
 .contents01 .article .art-img-child {
-  width: 58%;
+  width: 55%;
   position: absolute;
-  top: 21rem;
-  right: -2rem;
+  top: 83%;
+  left: 49%;
 }
 .contents01 .sec2,
 .contents01 .sec3,
@@ -809,10 +861,14 @@ h2 {
 .contents01 .sec4 .article {
   padding-bottom: 2rem;
 }
+.contents01 .sec2::before {
+  display: none;
+}
 .contents01 .sec2 .article:nth-child(5) .art-img-child {
-  width: 40%;
-  top: 25rem;
-  right: -2rem;
+  width: 31%;
+  top: 77%;
+  /* right: -19%; */
+  left: 64%;
 }
 .contents01 .sec2 .caption {
   /*
@@ -827,12 +883,13 @@ h2 {
   bottom: 1rem;
   text-align: justify;
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .contents01 {
     margin-bottom: -8rem;
   }
   .contents01 .sec1 {
     justify-items: end;
+    max-width: 1900px;
   }
   .contents01 .sec1 .article:nth-child(12) {
     grid-column: 2/4;
@@ -877,8 +934,8 @@ h2 {
     width: 100%;
   }
   .contents01 .sec2 .article .art-img-child {
-    top: 32rem;
-    right: -6rem;
+    top: 89%;
+    width: 60%;
   }
   .contents01 .sec2 .article:nth-child(3n+2) {
     flex-direction: row-reverse;
@@ -893,7 +950,7 @@ h2 {
   font-size: 2.5rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .contents01 .sec1 .article:nth-child(10) {
     display: flex;
     flex-direction: column;
@@ -921,8 +978,9 @@ h2 {
     bottom: -20rem;
   }
   .contents01 .sec2 .article:nth-child(5) .art-img-child {
-    top: 20rem;
-    left: 5rem;
+    top: 83%;
+    left: 72%;
+    width: 50%;
   }
   .contents01 .sec2 .article:nth-child(5) .caption {
     margin-left: 0;
