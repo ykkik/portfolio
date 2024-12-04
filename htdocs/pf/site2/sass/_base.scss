@@ -32,7 +32,7 @@ $pc2-conteiner:0 33%;
 
 @mixin sp-container {
   margin: 0 auto;
-  max-width: 767px;
+  max-width: 375px;
 }
 
 @mixin pc-container {
@@ -164,6 +164,10 @@ li {
 
 ul {
   padding-left: 0;
+}
+
+dd {
+  margin-left: 0;
 }
 
 
